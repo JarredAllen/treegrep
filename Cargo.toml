@@ -13,4 +13,4 @@ categories = ["command-line-utilities"]
 
 [dependencies]
 regex = "1.5"
-clap = "2.33"
+clap = { version = "2.33", features = ["wrap_help"] }

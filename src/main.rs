@@ -11,7 +11,7 @@ fn main() -> Result<(), Box<dyn std::error::Error + 'static>> {
     let matches = App::new(env!("CARGO_PKG_NAME"))
         .version(env!("CARGO_PKG_VERSION"))
         .author(env!("CARGO_PKG_AUTHORS"))
-        .about(env!("CARGO_PKG_DESCRIPTION"))
+        .about("Search through tree-formatted output (like from `cargo tree`) to find nodes matching a pattern and their ancestors")
         .arg(
             Arg::with_name("regex")
                 .help("Regular expression to search for inside the tree")
